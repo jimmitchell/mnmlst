@@ -9,7 +9,7 @@
 
                 <ul class="article-content photo-grid">
                     <?php while (have_posts()) : the_post(); ?>
-                    <li class="thumbnail"><a href="<?php the_permalink() ?>"><img src="<?php echo nominal_image_display(); ?>" loading="lazy" /></a></li>
+                    <li class="thumbnail"><a href="<?php the_permalink() ?>"><img src="<?php echo mnmlst_image_display(); ?>" loading="lazy" /></a></li>
                     <?php endwhile; ?>
                     <li></li>
                 </ul>
@@ -18,8 +18,8 @@
 
             <?php the_posts_pagination(array(
                 'mid_size' => 1,
-                'prev_text' => __('&larr;', 'nominal'),
-                'next_text' => __('&rarr;', 'nominal'),
+                'prev_text' => __('&larr;', 'mnmlst'),
+                'next_text' => __('&rarr;', 'mnmlst'),
             )); ?>
 
         <?php else : ?>

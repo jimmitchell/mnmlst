@@ -9,20 +9,20 @@
 
                 <h1 class="page-title">
                     <?php if (is_day()) : ?>
-                        <?php printf(__('%s', 'nominal'), '' . get_the_date() . ''); ?>
+                        <?php printf(__('%s', 'mnmlst'), '' . get_the_date() . ''); ?>
                     <?php elseif (is_month()) : ?>
-                        <?php printf(__('%s', 'nominal'), '' . get_the_date(_x('F Y', 'F = Month, Y = Year', 'nominal'))); ?>
+                        <?php printf(__('%s', 'mnmlst'), '' . get_the_date(_x('F Y', 'F = Month, Y = Year', 'mnmlst'))); ?>
                     <?php elseif (is_year()) : ?>
-                        <?php printf(__('%s', 'nominal'), '' . get_the_date(_x('Y', 'Y = Year', 'nominal'))); ?>
+                        <?php printf(__('%s', 'mnmlst'), '' . get_the_date(_x('Y', 'Y = Year', 'mnmlst'))); ?>
                     <?php elseif (is_category()) : ?>
-                        <?php printf(__('%s', 'nominal'), '' . single_cat_title('', false) . ''); ?>
+                        <?php printf(__('%s', 'mnmlst'), '' . single_cat_title('', false) . ''); ?>
                     <?php elseif (is_tag()) : ?>
-                        <?php printf(__('%s', 'nominal'), '' . single_tag_title('', false) . ''); ?>
+                        <?php printf(__('%s', 'mnmlst'), '' . single_tag_title('', false) . ''); ?>
                     <?php elseif (is_author()) : ?>
                         <?php $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author)); ?>
-                        <?php printf(__('Published by %s', 'nominal'), $curauth->display_name); ?>
+                        <?php printf(__('Published by %s', 'mnmlst'), $curauth->display_name); ?>
                     <?php else : ?>
-                        <?php _e('Archive', 'nominal'); ?>
+                        <?php _e('Archive', 'mnmlst'); ?>
                     <?php endif; ?>
                 </h1>
 

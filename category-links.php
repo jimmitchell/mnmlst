@@ -43,8 +43,8 @@
 
             <?php the_posts_pagination(array(
                 'mid_size' => 1,
-                'prev_text' => __('&larr;', 'nominal'),
-                'next_text' => __('&rarr;', 'nominal'),
+                'prev_text' => __('&larr;', 'mnmlst'),
+                'next_text' => __('&rarr;', 'mnmlst'),
             )); ?>
 
         <?php else : ?>

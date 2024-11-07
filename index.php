@@ -17,7 +17,7 @@
                         <?php if (has_post_thumbnail()) the_post_thumbnail('post-image'); ?>
                         <?php the_content(); ?>
                         <?php wp_link_pages(array(
-                            'before'      => '<p>' . __('Pages:', 'nominal'),
+                            'before'      => '<p>' . __('Pages:', 'mnmlst'),
                             'after'       => '</p>',
                             'pagelink'    => '%',
                             'separator'   => ', ',
@@ -29,8 +29,8 @@
 
             <?php the_posts_pagination(array(
                 'mid_size' => 1,
-                'prev_text' => __('&larr;', 'nominal'),
-                'next_text' => __('&rarr;', 'nominal'),
+                'prev_text' => __('&larr;', 'mnmlst'),
+                'next_text' => __('&rarr;', 'mnmlst'),
             )); ?>
 
         <?php else : ?>
